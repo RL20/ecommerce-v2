@@ -7,8 +7,8 @@ import { useParams } from "react-router-dom";
 
 const ProductScreen = () => {
   const params = useParams();
-  const { id } = params;
-  const product = products.find((p) => p._id === id);
+  const { id: productId } = params;
+  const product = products.find((p) => p._id === productId);
   return (
     <>
       <Link to="/" className="btn btn-light my-3">
